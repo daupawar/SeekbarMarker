@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SeekbarMarker">
+        <attr name="marker_color" format="color" />
+        <attr name="marker_width" format="integer" />
+    </declare-styleable>
+</resources>
