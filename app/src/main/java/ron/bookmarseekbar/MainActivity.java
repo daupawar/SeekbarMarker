@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void setMeidaPlayer() {
-        Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.leesa);
+        Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.big_buck_bunny);
         mp = new MediaPlayer();
         try {
             mp.setDataSource(getApplicationContext(), uri);

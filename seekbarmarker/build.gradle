@@ -1,9 +1,8 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 26
-
-
 
     defaultConfig {
         minSdkVersion 18
@@ -22,6 +21,23 @@ android {
         }
     }
 
+}
+
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+publish {
+    userOrg = 'daupawar'
+    groupId = 'com.rohanpawar'
+    artifactId = 'seekbarmarker'
+    publishVersion = rootProject.ext.libVersionName
+    desc = 'Android library to add marker on seekbar'
+    website = 'https://github.com/daupawar/SeekbarMarker'
+    licences = ['Apache-2.0']
+    issueTracker = 'https://github.com/daupawar/SeekbarMarker/issues'
+    bintrayUser = properties.getProperty('bintray.user')
+    bintrayKey = properties.getProperty('bintray.apikey')
+    dryRun = false //  If set to true this will run everything but it won't upload the package. If false then it will upload.
 }
 
 dependencies {

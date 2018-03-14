@@ -13,8 +13,6 @@ import android.util.AttributeSet;
 import java.util.ArrayList;
 
 /**
- * ༼-つ-◕_◕-༽つ
- *
  * @author Rohan on 13/03/18.
  */
 
