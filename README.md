@@ -39,6 +39,15 @@ dependencies {
 ```java
 seekbar = findViewById(R.id.timeline);
 
+//on prepared video player set duration
+@Override
+public void onPrepared(MediaPlayer mp) {
+        mp.start();
+        updateProgressBar();
+        seekbar.setVideoDuration(mp.getDuration());
+}
+
+
 //with drawable
 seekbar.addBookmark(50 * 1000, R.drawable.orange_flag);
 seekbar.addBookmark(120 * 1000,R.drawable.black_flag);
