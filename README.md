@@ -1,5 +1,5 @@
 # SeekbarMarker
-Add bookmark on seekbar on specific time
+Add bookmark on seekbar at specific time
 
  <img src="https://github.com/daupawar/SeekbarMarker/blob/master/bunny.gif" width="360" height="640">
 
