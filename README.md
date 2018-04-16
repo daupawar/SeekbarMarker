@@ -1,6 +1,8 @@
 # SeekbarMarker
 Add bookmark on seekbar at specific time
 
+Orginal idea https://github.com/moltak
+ 
  <img src="https://github.com/daupawar/SeekbarMarker/blob/master/bunny.gif" width="360" height="640">
 
 # Setup
